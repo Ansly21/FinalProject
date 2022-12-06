@@ -1,0 +1,54 @@
+.container {
+  background-color: #deffdb;
+  max-width: 100%;
+  max-height: 100%;
+  padding: 0;
+}
+
+.container img{
+margin-top: 10px;
+margin-bottom: 10px;
+}
+
+.container2 {
+    padding: 1%;
+    margin-left: 3%;
+}
+
+.text {
+  display: inline;
+}
+
+span1 {
+  margin-left: 10.5%;
+}
+
+span2 {
+  margin-left: 10.5%;
+}
+
+span4{
+  margin-left: 8%;
+}
+
+span5{
+  margin-left: 7.7%;
+}
+
+.container2 spanX{
+  font-size: 25px;
+  font-family:'Times New Roman', Times, serif;
+}
+
+.container2 span,span1,span2,span3,span4,span5{
+  font-size: 20px;
+  font-family:'Times New Roman', Times, serif;
+}
+
+.container3{
+  margin: 3%;
+}
+
+.container4{
+  color: gray;
+}

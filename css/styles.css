@@ -1,0 +1,108 @@
+* {
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  background-color: transparent;
+  color: black;
+
+}
+
+a:hover {
+   color: black;
+}
+
+.logo-img {
+  width: 20%;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #deffdb;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.center {
+  width: 10%;
+  text-align: center;
+  margin-right: 20px;
+  padding: 10px 5px;
+}
+
+.center img {
+  width: 70%;
+}
+
+.flex {
+  display: flex;
+  align-items: center;
+}
+
+.right {
+  margin-left: auto;
+  margin-top: 20px;
+}
+
+.login {
+  margin-right: 1rem;
+  font-weight: bold;
+}
+
+h1 {
+  text-align: left;
+  font-weight: bold;
+}
+
+h2 {
+  font-weight: bold;
+}
+
+ul {
+  list-style: none; 
+  padding: 0; 
+  text-align: center;
+}
+
+#log {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+button {
+  background-color: green;
+  color: white;
+  border: none;
+  padding: 0.2rem 0.3rem;
+}
+
+  #menu {
+    margin-right: 30%;
+    margin-left: 30%;
+  }
+
+h3 {
+    text-align: center;
+  }
+
+.promos {
+    margin-left: 20%;
+    margin-right: 20%;
+  }
+
+.promos img {
+  width: 500px;
+}
+
+h5 {
+  margin-left: 20%;
+
+}

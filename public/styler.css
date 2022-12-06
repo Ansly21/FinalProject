@@ -1,0 +1,132 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.whole-nav {
+  background-color: #deffdb;
+}
+
+.header-nav {
+  display: flex;
+  width: 90%;
+  margin: 0 auto;
+  justify-content: space-between;
+}
+
+a {
+  display: contents;
+  text-decoration: none;
+  color: black;
+}
+
+.logo--name {
+  display: flex;
+  padding: 0.5rem 0;
+}
+
+.nav-logo {
+  width: 10%;
+}
+
+.name {
+  margin: auto 0;
+  margin-left: 2rem;
+}
+
+.ul-nav {
+  list-style: none;
+  display: flex;
+  margin: auto 0;
+  padding: 0.2rem 0;
+}
+
+.list-item-nav {
+  margin: auto 1rem;
+  font-size: 1.5rem;
+  color: black;
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+.cart-btn {
+  margin: auto;
+  background-color: green;
+  padding: 0.3rem 0.5rem;
+  border: none;
+}
+
+.bi {
+  color: white;
+}
+
+h1 {
+  text-align: center;
+}
+
+#button_order {
+  background-color: lightgreen;
+  text-align: center;
+  border: none;
+  width: 150px;
+}
+
+.container2 {
+  text-align: center;
+}
+
+.my-3 {
+  margin-left: 37%;
+  margin-right: 37%;
+}
+
+#menutop {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 30%;
+  border-radius: 10px;
+}
+
+.button1 {
+  background-color: #116337;
+  color: white;
+  display: block;
+  margin: 0 auto;
+  border: none;
+  font-size: 120%;
+  width: 100px;
+}
+
+.my-4 {
+  margin-left: 30%;
+  margin-right: 30%;
+}
+
+.promos {
+  margin-left: 20%;
+  margin-right: 8%;
+}
+
+.bottom {
+  margin-left: 5%;
+  margin-right: 5%;
+  float: left;
+}
+
+.socials {
+  width: 100%;
+  color: white;
+  border-radius: 5px;
+  border: none;
+}
+
+button.link {
+  background: none;
+  border: none;
+}
+/*# sourceMappingURL=styler.css.map */

@@ -1,0 +1,166 @@
+
+a {
+  text-decoration: none;
+  background-color: transparent;
+  color: black;
+
+}
+
+a:hover {
+   color: black;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.center {
+  width: 10%;
+  text-align: center;
+  margin-right: 20px;
+  padding: 10px 5px;
+}
+
+.center img {
+  width: 70%;
+}
+
+.flex {
+  display: flex;
+  align-items: center;
+}
+
+.right {
+  margin-left: auto;
+  margin-top: 20px;
+}
+
+.login {
+  margin-right: 1rem;
+  font-weight: bold;
+}
+
+h1 {
+  text-align: left;
+  font-weight: bold;
+}
+
+h2 {
+  font-weight: bold;
+}
+
+ul {
+  list-style: none; 
+  padding: 0; 
+  text-align: center;
+}
+
+#log {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+button {
+  background-color: green;
+  color: white;
+  border: none;
+  padding: 0.2rem 0.3rem;
+}
+
+  #menu {
+    margin-right: 30%;
+    margin-left: 30%;
+  }
+
+h3 {
+    text-align: center;
+  }
+
+.promos {
+    margin-left: 20%;
+    margin-right: 20%;
+  }
+
+.promos img {
+  width: 500px;
+}
+
+h5 {
+  margin-left: 20%;
+
+}
+
+h6 {
+  text-align: right;
+  color:gray;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  margin-right: 20px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.whole-nav {
+  background-color: #deffdb;
+}
+
+.header-nav {
+  display: flex;
+  width: 90%;
+  margin: 0 auto;
+  justify-content: space-between;
+}
+
+a {
+  display: contents;
+  text-decoration: none;
+  color: black;
+}
+
+.logo--name {
+  display: flex;
+  padding: 0.5rem 0;
+}
+
+.nav-logo {
+  width: 10%;
+}
+
+.name {
+  margin: auto 0;
+  margin-left: 2rem;
+}
+
+.ul-nav {
+  list-style: none;
+  display: flex;
+  margin: auto 0;
+  padding: 0.2rem 0;
+}
+
+.list-item-nav {
+  margin: auto 1rem;
+  font-size: 1.5rem;
+  color: black;
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+.cart-btn {
+  margin: auto;
+  background-color: green;
+  padding: 0.3rem 0.5rem;
+  border: none;
+}
+
+.bi {
+  color: white;
+}

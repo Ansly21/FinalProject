@@ -1,0 +1,113 @@
+*{
+    margin:0;
+    padding:0;
+}
+
+.header {
+    background-color: #deffdb;
+    width: 100%;
+    height: 10%;
+    position: fixed;        
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+  }
+
+.header h1{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 25px;
+    padding-top: 15px;
+    padding-left: 20px;
+    display: inline-block;
+
+}
+
+.logo{
+    padding-top: 5px;
+    padding-left: 50px;
+    max-width: 55px;
+    float: left;
+    margin: 0 10px 0 0;
+}
+
+.forgot{
+    display:flex;
+    height: 70vh;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.forgot .form-wrap{
+    width:25%;
+    padding: 15 px 20 px;
+}
+
+.forgot .form-wrap h2{
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    padding-bottom: 10px;
+    font-size: 25px;
+}
+
+.forgot .form-wrap p{
+    text-align: center;
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    padding-bottom: 20px;
+    color: #606060;
+}
+
+.forgot .form-wrap .email-box h6{
+    text-align: center;
+    font-family: Helvetica;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 12px;
+    color: #606060;
+}
+
+.forgot .form-wrap .email-box input[type="text"] {
+    padding: 10px 4px;
+    border-radius: 5px;
+    border: 1px solid #cfcfcf;
+    width: 100%;
+}
+
+.forgot .form-wrap .number-box input[type="text"] {
+    padding: 10px 4px;
+    border-radius: 5px;
+    border: 1px solid #cfcfcf;
+    width: 100%;
+}
+
+.submit button {
+    padding-top: 100px;
+    background-color:#aedd94;
+    color: black;
+    padding: 10px 4px;
+    border-radius: 5px;
+    font-weight: bold;
+    width: 410px;
+    border: none;
+    cursor: pointer;
+    width: 103%;
+  }
+
+.footer {
+    width: 100%;
+    position: fixed;        
+    padding: 10px 0;
+    bottom: 0;
+    border-top: 1px solid #ccc;
+    
+  }
+
+
+.footer h2{
+    text-align: right;
+    font-family: Helvetica;
+    font-size: 10px;
+    color: gray;
+    padding-right: 15px;
+    font-weight: lighter;
+  }

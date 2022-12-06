@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.2/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="styles2.css">
+    <title>Payment Method</title>
+</head>
+<body>
+  
+    <div class="container">
+        &emsp;&emsp;
+        <a href="/./public/index.html"><img src="KKN Restaurant Logo.png" alt="Restuarant Logo" width="90px" id="log"></a>
+    <span style="font-size: 150%"><b>KKN RESTAURANT DELIVERY</b></span>
+    
+ <hr class="my-1" style="width: 100%;">
+</div>
+    <br><br>
+    <div class="options">
+    <a id="link" class="pay" href="/./public/Address Details and Payment (Done)/Payment Method/payment.html">Payment Method</a>
+    <a id="link" class="ress" href="/./public/Address Details and Payment (Done)/Adress Details/address.html">Address Details</a>
+    <a id="link" class="ord" href="/./public/Order Summary/Order Summary.html">Order Summary</a>
+    </div>
+    
+    <br><br>
+
+    <div class="bill">
+        <br><br><br>
+        <div class="mop">
+            <h3>Choose your mode of payment:</h3>
+
+            <form onsubmit="return orderComplete();">
+          <br>
+            <input type="radio" id="cash" name="payS" value="cash" required>
+        <label for="cash">
+            <h6>Cash &emsp13;<i class="bi bi-cash"></i></h6>
+        </label>
+        
+            </label>
+            <br><br>
+            <input type="radio" id="gcash" name="payS" value="gcash">
+        <label for="gcash">
+            <h6>Gcash</h6>
+            </label>
+
+
+            <br><br>          
+              
+               </div>
+
+        <h3 id="gra">Bill</h3>
+        
+        <hr class="line">
+        <h6 id="gra">SUBTOTAL <span style="margin-left: 16.5%;" id="paylabel"> &#8369; 0.00</span></h6>
+        <h6 id="gra">DELIVERY FEE<span style="margin-left: 14.5%;"> &#8369; 50.00</span></h6>
+        <h6 id="gra">TAXES<span style="margin-left: 18.5%;"> &#8369; 0.00</span></h6>
+        <hr class="line">
+        <h5>TOTAL<span style="margin-left: 17%;"> &#8369; 0.00</span></h5>
+               
+        <br><br><br>
+        <button class="button" type="submit">Place  Order</button>
+
+            </form>        
+    </div>
+
+<br><br><br>
+   
+      <br><br><br><br><br><br><br><br><br><br><br>
+   <hr>
+   <h6 id="mark">&copy;KKN Company. All Rights Reserved</h6>
+   
+    S<br>
+  
+    
+    <script src="./cart.js"></script>
+    <script src="script2.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+</html>

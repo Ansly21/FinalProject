@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.2/font/bootstrap-icons.css">
+    <title>Payment Method</title>
+    <%- include('./partials/nav-style.ejs') %> 
+    <%- include('./partials/payment-css.ejs') %> 
+</head>
+<body>
+  
+   <%- include('./partials/nav.ejs') %>
+    <br><br>
+    <div class="options">
+    <a id="link" class="pay" href="/payment-method">Payment Method</a>
+    <a id="link" class="ress" href="/address-details">Address Details</a>
+    <a id="link" class="ord" href="/cart">Order Summary</a>
+    </div>
+    
+    <br><br>
+
+    <div class="bill">
+        <br><br><br>
+        <div class="mop">
+            <h3>Choose your mode of payment:</h3>
+
+<form onsubmit="return orderComplete();" method="post" action="/payment-method">
+          <br>
+            <input type="radio" id="cash" name="payS" value="Cash" required>
+        <label for="cash">
+            <h6>Cash &emsp13;<i class="bi bi-cash"></i></h6>
+        </label>
+        
+            </label>
+            <br><br>
+            <input type="radio" id="gcash" name="payS" value="Gcash">
+        <label for="gcash">
+            <h6>Gcash</h6>
+            </label>
+
+
+            <br><br>          
+              
+               </div>
+
+        <h3 id="gra">Bill</h3>
+        
+        <hr class="line">
+        <h6 id="gra">SUBTOTAL <span style="margin-left: 16.5%;" id="paylabel"> &#8369; 0.00</span></h6>
+        <h6 id="gra">DELIVERY FEE<span style="margin-left: 14.5%;"> &#8369; 50.00</span></h6>
+        <h6 id="gra">TAXES<span style="margin-left: 18.5%;"> &#8369; 0.00</span></h6>
+        <hr class="line">
+        <h5>TOTAL<span style="margin-left: 17%;"> &#8369; 0.00</span></h5>
+               
+        <br><br><br>
+        <button class="button">Place Order</button>
+
+</form>        
+    </div>
+
+<br><br><br>
+   
+      <br><br><br><br><br><br><br><br><br><br><br>
+   <hr>
+   <h6 id="mark">&copy;KKN Company. All Rights Reserved</h6>
+   
+    <br>
+  
+    
+    <%- include('./partials/payment-js.ejs') %>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+</html>

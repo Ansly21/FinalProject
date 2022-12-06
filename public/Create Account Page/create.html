@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Page</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/adcd56e215.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="create.css">
+</head>
+<body>
+    <div class="container">
+        &emsp;&emsp;
+        <a href="/index.html">
+    <img src="img/Logo.png" alt="Restuarant Logo" width="90px"></a> 
+    <span style="font-size: 150%;"><b>KKN RESTAURANT DELIVERY</b></span><hr>
+    </div>
+
+    <div class="create">
+        <div class="row">
+            <div class="col">
+                <div class="padding">
+                       <br>   
+                        <h2>CREATE ACCOUNT</h2>
+                        <p>Provide your name, email, and phone number to create account</p>
+                        <div class="name-box">
+                            <input type="text" id="name" placeholder="First Name">
+                        </div>
+                        <br>
+                        <div class="email-box">
+                            <input type="text" id="email" placeholder="Email">
+                        </div>
+                        <br>
+                        <div class="password-box">
+                            <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                            <span class="eye" onclick="MyFunction2()">
+                                <i id="hide3" class="fa-solid fa-eye"></i>
+                                <i id="hide4" class="fa-solid fa-eye-slash"></i>
+                            </span>
+                        </div>
+                </div>
+            </div>
+        
+            <div class="col">
+                    <div class="padding2">
+                        <br><br><br><br><br>
+                        <div class="lname-box">
+                            <input type="text" id="lname" placeholder="Last Name">
+                        </div>
+                        <br>
+                        <div class="number-box">
+                            <input type="text" placeholder="Phone Number" />
+                        </div>
+                        <br>
+                        <div class="password-box2">
+                            <input type="password" class="form-control" id="exampleInputPassword2" placeholder="Retype Password">
+                            <span class="eye" onclick="MyFunction()">
+                                <i id="hide1" class="fa-solid fa-eye"></i>
+                                <i id="hide2" class="fa-solid fa-eye-slash"></i>
+                            </span>
+                        </div>
+                    </div>
+            </div>
+        </div>
+    </div>
+
+        
+    <br><br><br>
+    <div class="submit">
+        <a href="/Sign In Page/sign in.html"> 
+            <button type="button">Create Account</button>
+        </a>
+        
+    </div>
+
+    <div class="footer">
+        <p style="text-align: right; margin-right: 20px; color: gray; border-top: 1px solid #ccc; margin-bottom: 0px; padding: 10px 0;">&copy;KKN Company. All Rights Reserved</p>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+    <script>
+        function MyFunction() {
+            var x = document.getElementById("exampleInputPassword2");
+            var y = document.getElementById("hide1");
+            var z = document.getElementById("hide2");
+
+            if(x.type === 'password'){
+                x.type = "text";
+                y.style.display = "block";
+                z.style.display = "none"
+            }
+
+            else {
+                x.type = "password";
+                y.style.display = "none";
+                z.style.display = "block"
+            }
+        }
+
+        function MyFunction2() {
+            var x = document.getElementById("exampleInputPassword1");
+            var y = document.getElementById("hide3");
+            var z = document.getElementById("hide4");
+
+            if(x.type === 'password'){
+                x.type = "text";
+                y.style.display = "block";
+                z.style.display = "none"
+            }
+
+            else {
+                x.type = "password";
+                y.style.display = "none";
+                z.style.display = "block"
+            }
+        }
+
+    </script>
+
+</body>
+</html>

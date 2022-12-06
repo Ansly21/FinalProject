@@ -1,0 +1,145 @@
+.container {
+  background-color: #deffdb;
+  max-width: 100%;
+  padding: 0%;
+}
+   
+.container img {
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+  
+  
+  .create{
+    display: block;
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .create h2{
+  text-align: left;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 25px;
+  font-weight: bold;
+  }
+  
+  .create p{
+    text-align: left;
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    padding-bottom: 20px;
+    color: #606060;
+  }
+  
+  .create .email-box input[type="text"] {
+    padding: 10px 4px;
+    border-radius: 5px;
+    border: 1px solid #cfcfcf;
+    width: 100%;
+  }
+  
+  .create .name-box input[type="text"] {
+    padding: 10px 4px;
+    border-radius: 5px;
+    border: 1px solid #cfcfcf;
+    width: 100%;
+  }
+  
+  .create .password-box input[type="password"] {
+    padding: 10px 4px;
+    border-radius: 5px;
+    border: 1px solid #cfcfcf;
+    width: 100%;
+  }
+  
+  
+  .create .lname-box input[type="text"] {
+    padding: 10px 4px;
+    border-radius: 5px;
+    border: 1px solid #cfcfcf;
+    width: 100%;
+  }
+  
+  .create .number-box input[type="text"] {
+    padding: 10px 4px;
+    border-radius: 5px;
+    border: 1px solid #cfcfcf;
+    width: 100%;
+  }
+  
+  .create .password-box2 input[type="password"] {
+    padding: 10px 4px;
+    border-radius: 5px;
+    border: 1px solid #cfcfcf;
+    width: 100%;
+    padding-right: 40px;
+  }
+
+  
+  .password-box2{
+    position: relative;
+   
+  }
+  
+  .password-box2 i{
+      position: absolute;
+      right: 0;
+      top: 13px;
+      cursor: pointer;
+      padding-right: 15px;
+  }
+  
+  .password-box{
+    position: relative;
+   
+  }
+  
+  .password-box i{
+      position: absolute;
+      right: 0;
+      top: 13px;
+      cursor: pointer;
+      padding-right: 15px;
+  }
+  
+  .submit {
+    text-align: center;
+  }
+  
+  .submit button {
+    padding-top: 100px;
+      background-color:#aedd94;
+      color: black;
+      padding: 8px 2px;
+      border-radius: 5px;
+      font-weight: bold;
+      width: 25%;
+      border: none;
+      cursor: pointer;
+      
+  }
+  
+  
+  
+  #hide1 {
+    display: none;
+  }
+  
+  
+  .footer {
+    width: 100%;
+    position: fixed;        
+    padding: 10px 0;
+    bottom: 0;
+  }
+  
+  .padding {
+    padding-left: 20%;
+    padding-right: 10%;
+  }
+    
+  .padding2 {
+    padding-left: 10%;
+    padding-right: 20%;
+  
+  }

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+    <title>Rate Us EJS</title>
+    <%- include('./partials/rate-us-style.ejs') %>
+    <%- include('./partials/nav-style.ejs') %> 
+</head>
+<body>
+    <%- include('./partials/nav.ejs') %>
+
+<br><br>
+
+        <h3 style="margin-left: 3%;"><b>How was your experience? Rate Us!</b></h3>
+
+        <br>
+    
+
+        <div class="container2">
+            <form>
+                
+                <spanX>The products offered are appetizing.</spanX>
+                <br>
+                <input type="range" min="0" max="2" value="0" style="width: 23%;">
+                <br>
+                <div class="text">
+                    <span> 1 </span>
+                    <span1> 2 </span>
+                    <span2> 3 </span>
+                            <br>
+                    <span3> Bad </span>
+                    <span4> Neutral </span>
+                    <span5> Good </span>
+                </div>
+                
+                <br><br><br>
+
+                <spanX>There are a lot of varieties of products offered.</spanX>
+                <br>
+                <input type="range" min="0" max="2" value="0" style="width: 23%;">
+                <br>
+                <div class="text">
+                    <span> 1 </span>
+                    <span1> 2 </span>
+                    <span2> 3 </span>
+                            <br>
+                    <span3> Bad </span>
+                    <span4> Neutral </span>
+                    <span5> Good </span>
+                </div>
+
+                <br><br><br>
+
+                <spanX>The delivery arrived on time.</spanX>
+                <br>
+                <input type="range" min="0" max="2" value="0" style="width: 23%;">
+                <br>
+                <div class="text">
+                    <span> 1 </span>
+                    <span1> 2 </span>
+                    <span2> 3 </span>
+                            <br>
+                    <span3> Bad </span>
+                    <span4> Neutral </span>
+                    <span5> Good </span>
+                </div>
+            </form>
+        </div>
+
+        <hr>
+        
+
+        <div class="container3">
+        <p style="font-size:120%"><b>Overall feedback or suggestions are highly appreciated:</b></p>
+
+        <form id="box">
+            <textarea rows="10" cols="180" placeholder="Type here"></textarea>
+        </form>
+        <button class="sb-btn" id="submitRes" onclick="location.href='home'">Submit Feedback</button>
+<br>
+    </div>
+
+   <hr class="my-4">
+   
+        <%- include('./partials/footer.ejs') %>
+
+<%- include ('./partials/rate-us.js') %>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+</html>

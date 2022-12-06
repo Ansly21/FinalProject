@@ -1,0 +1,111 @@
+.container {
+  background-color: #deffdb;
+  max-width: 100%;
+  padding: 0%;
+}
+   
+.container img {
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+  
+.sign{
+  display: block;
+  width: 100%;
+  max-width: 100%;
+}
+
+.sign  button{
+  padding-top: 100px;
+  background-color:#aedd94;
+  color: black;
+  padding: 10px 4px;
+  width: 100%;
+  border-radius: 5px;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+}
+  
+  
+.sign  h2{
+  text-align: left;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 25px;
+  font-weight: bold;
+}
+  
+.sign  p{
+  text-align: left;
+  font-size: 15px;
+  font-family: Arial, Helvetica, sans-serif;
+  padding-bottom: 20px;
+  color: #606060;
+}
+  
+.sign  .email-box input[type="text"] {
+  padding: 10px 4px;
+  border-radius: 5px;
+  border: 1px solid #cfcfcf;
+  width: 100%;
+}
+  
+.sign .password-box input[type="password"] {
+  padding: 10px 4px;
+  border-radius: 5px;
+  border: 1px solid #cfcfcf;
+  width: 100%;
+}
+  
+.vl {
+  border-left: 2px solid #ccc;
+  position: fixed;
+  left: 50%;
+  margin-left: -3px;
+  margin-top: 10%;
+  top: 0;
+}
+  
+.sign .link p{
+  padding-top: 10px;
+  display: block; 
+  text-align: right;
+  color: orange;
+  text-decoration: underline;
+}
+  
+.password-box i{
+  position: absolute;
+  right: 0;
+  top: 15px;
+  cursor: pointer;
+  padding-right: 10px;
+}
+  
+.password-box{
+  position: relative;
+}
+  
+#hide1 {
+  display: none;
+}
+
+.padding {
+  padding-left: 10%;
+  padding-right: 10%;
+}
+  
+.padding2 {
+  padding-left: 10%;
+  padding-right: 10%;
+}
+
+.footer {
+  width: 100%;
+  position: fixed;        
+  padding: 10px 0;
+  bottom: 0;
+}
+  
+ 
+  

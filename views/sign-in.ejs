@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/adcd56e215.js" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+    <title>Sign In EJS</title>
+    <%- include('./partials/nav-style.ejs') %>
+    <%- include('./partials/sign-in-style.ejs') %>
+</head>
+<body>
+
+    <%- include('./partials/nav.ejs') %>
+
+<br><br>
+<div class="container">
+    <div class="sign">
+        <div class="row">
+            <div class="col">
+                <div class="padding">
+                    <h2 class="si-h">SIGN IN</h2>
+                    <p class="si-p">Sign in with your email and password</p>
+                    <form id="login">
+                        <!--<input type="text" autocomplete="off" id="username" placeholder="Username" class="si-box"> -->
+                        <input type="email" id="email" placeholder="Email" autocomplete="off" class="si-box">
+                        <input type="password" id="password" placeholder="Password" class="si-box">
+                        <i class="far fa-eye" id="togglePassword"></i>
+                        <p><a href="/forgot-password" class="text-warning" class="si-box">Forgot Password</a></p>
+
+                        <input type="submit" value="Sign in" class="si-box" id="login-btn">
+                        <div class="vl"></div>
+                    </form>
+                
+                    <div class="link">
+
+                    </div>
+                        
+                </div>
+            </div>
+            
+            <div class="col"> 
+                <div class="padding2">
+                    <h2 class="siup">SIGN UP</h2>
+                    <p>No account yet?</p>
+                   
+                        <button type="button" id="su" onclick="location.href='create-account'">Create Account</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><b><br><br>
+    <hr>
+    <%- include('./partials/footer.ejs') %>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script>
+        const form = document.getElementById('login')
+        form.addEventListener('submit', login)
+
+
+        async function login(event) {
+            event.preventDefault()
+            const email = document.getElementById('email').value
+            const password = document.getElementById('password').value
+
+            const result = await fetch('/sign-in', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify({
+                    email,
+                    password
+                })
+            }).then((res) => res.json())
+            if(result.status === 'ok') {
+                console.log('Got the token: ', result.data)
+                alert('Success')
+            }else {
+                alert(result.error)
+            }
+        }
+
+        const togglePassword = document.querySelector('#togglePassword');
+        const password = document.querySelector('#password');
+
+        togglePassword.addEventListener('click', function (e) {
+        const type = password.getAttribute('type') === 'password' ? 'text' : 'password';
+        password.setAttribute('type', type);
+        this.classList.toggle('fa-eye-slash');
+});
+    </script>
+</body>
+</html>

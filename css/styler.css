@@ -1,0 +1,92 @@
+.container {
+  background-color: #deffdb;
+  max-width: 100%;
+  padding: 0%;
+}
+
+.container img {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+ol {
+  display: inline;
+  margin-left: 60%;
+}
+
+#button_cart {
+  background-color: #116337;
+  border: none;
+  width: 100px;
+}
+
+.bi-cart3 {
+  color: white;
+}
+
+h1 {
+  text-align: center;
+}
+
+#button_order {
+  background-color: lightgreen;
+  text-align: center;
+  border: none;
+  width: 150px;
+}
+
+.container2 {
+  text-align: center;
+}
+
+.my-3 {
+  margin-left: 37%;
+  margin-right: 37%;
+}
+
+#menutop {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 30%;
+  border-radius: 10px;
+}
+
+.button1 {
+  background-color: #116337;
+  color: white;
+  display: block;
+  margin: 0 auto;
+  border: none;
+  font-size: 120%;
+  width: 100px;
+}
+
+.my-4 {
+  margin-left: 30%;
+  margin-right: 30%;
+}
+
+.promos {
+  margin-left: 20%;
+  margin-right: 8%;
+}
+
+.bottom {
+  margin-left: 5%;
+  margin-right: 5%;
+  float: left;
+}
+
+.socials {
+  width: 100%;
+  color: white;
+  border-radius: 5px;
+  border: none;
+}
+
+button.link {
+  background: none;
+  border: none;
+}
+/*# sourceMappingURL=styler.css.map */

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+    <title>Address Details EJS</title>
+    <%- include('./partials/nav-style.ejs') %> 
+    <%- include('./partials/address-details-css.ejs') %> 
+</head>
+<body>
+
+    <%- include('./partials/nav.ejs') %>
+
+    <div class="options">
+    <a id="link" class="ord" href="/cart">Order Summary</a>
+    <a id="link" class="ress" href="/address-details">Address Details</a>
+    <a id="link" class="pay" href="/payment-method">Payment Method</a>
+    </div>
+    <br><br>
+    <div>
+    <form method="post" action="/address-details">
+    <b style="margin-left: 8%;">Please fill out all fields</b> <br><br>
+    <input type="text" placeholder="Province" id="prov" name="province" autocomplete="off" required>
+    <input type="text" placeholder="City" id="cit" name="city" autocomplete="off" required>
+    <input type="text" placeholder="Barangay" id="bara" name="barangay" autocomplete="off" required>
+    <input type="text" placeholder="House No/Apt No/Floor" id="apt" name="houseno" autocomplete="off" required>
+    <input type="text" placeholder="Street Name" id="street" name="street" autocomplete="off" required>
+    <input type="text" placeholder="(Optional) Nearest Landmark" name="landmark" autocomplete="off">
+    <br><br>
+    <div id="wrapper">
+            <button class="button">Continue</button>
+    </form>
+      </div>
+    
+      
+    </body>
+    
+    
+    </html>
+</body>
+</html>
