@@ -13,12 +13,11 @@ const bodyParser = require('body-parser')
 
 
 const app = express()
-const dbUri = "mongodb+srv://root:datawarehouse21@cluster0.ail1xu6.mongodb.net/kknteam?retryWrites=true&w=majority" //connect to atlas
 
-mongoose.connect(dbUri, {useNewUrlParser: true, useUnifiedTopology: true})
+mongoose.connect(process.env.MONGO_URI, {useNewUrlParser: true, useUnifiedTopology: true})
 .then(result => {
     console.log("connected")
-    app.listen(3000, err => {
+    app.listen(process.env.PORT || 3000, err => {
         if(!err) console.log('listening')
     })
 })
